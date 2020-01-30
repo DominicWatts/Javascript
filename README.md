@@ -17,3 +17,7 @@ Create a Magento Javascript Component. Magento Javascript Components are Require
 ### Delta: Data-mage-init Attribute
 
 Invoke on a specific DOM node
+
+### Epsilon: Knockout in Magento 2
+
+KO Model-View and View

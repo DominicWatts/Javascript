@@ -1,0 +1,39 @@
+<?php
+/**
+ * /xigen_javascript/epsilon/ko
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Magento Knockout", 5)); ?></h1>
+
+<div data-bind="scope: 'ko'">
+    <!-- ko template: getTemplate() -->
+    Hello this is content is in the markup!
+    <!-- /ko -->
+</div>
+
+<div data-bind="scope: 'time'">
+    <!-- ko template: getTemplate() -->
+    <p>I am example3.HTML template, dynamically loaded. This is my message to you:</p>
+    <p data-bind="text: time"><?= $block->escapeHtml(date('c')); ?></p>
+    <!-- /ko -->
+</div>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "ko": {
+                        "component": "Xigen_Javascript/epsilon/ko",
+                        "template" : "Xigen_Javascript/epsilon/ko"
+                    },
+                    "time": {
+                        "component": "Xigen_Javascript/epsilon/time",
+                        "template" : "Xigen_Javascript/epsilon/time"
+                    }
+                }
+            }
+        }
+    }
+</script>
