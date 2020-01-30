@@ -13,3 +13,7 @@ Initialization method allows you to run a RequireJS module as a program
 ### Gamma: Magento Javascript Components
 
 Create a Magento Javascript Component. Magento Javascript Components are RequireJS modules that return a function.
+
+### Delta: Data-mage-init Attribute
+
+Invoke on a specific DOM node

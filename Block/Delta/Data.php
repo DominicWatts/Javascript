@@ -1,17 +1,16 @@
 <?php
 
-namespace Xigen\Javascript\Block\Alpha;
+
+namespace Xigen\Javascript\Block\Delta;
 
 /**
- * Class Requirejs
- * @package Xigen\Javascript\Block\Alpha
+ * Class Data
+ * @package Xigen\Javascript\Block\Delta
  */
-class Requirejs extends \Magento\Framework\View\Element\Template
+class Data extends \Magento\Framework\View\Element\Template
 {
-
     /**
      * Constructor
-     *
      * @param \Magento\Framework\View\Element\Template\Context  $context
      * @param array $data
      */

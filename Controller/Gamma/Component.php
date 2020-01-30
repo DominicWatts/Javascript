@@ -1,16 +1,21 @@
 <?php
 
-
 namespace Xigen\Javascript\Controller\Gamma;
 
+/**
+ * Class Component
+ * /xigen_javascript/gamma/component
+ * @package Xigen\Javascript\Controller\Gamma
+ */
 class Component extends \Magento\Framework\App\Action\Action
 {
-
+    /**
+     * @var \Magento\Framework\View\Result\PageFactory
+     */
     protected $resultPageFactory;
 
     /**
      * Constructor
-     *
      * @param \Magento\Framework\App\Action\Context  $context
      * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
      */
@@ -24,7 +29,6 @@ class Component extends \Magento\Framework\App\Action\Action
 
     /**
      * Execute view action
-     *
      * @return \Magento\Framework\Controller\ResultInterface
      */
     public function execute()

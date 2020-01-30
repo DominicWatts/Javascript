@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Xigen\Javascript\Block\Beta;
 
 class Init extends \Magento\Framework\View\Element\Template

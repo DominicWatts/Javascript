@@ -1,13 +1,14 @@
 <?php
 
-namespace Xigen\Javascript\Controller\Beta;
+
+namespace Xigen\Javascript\Controller\Delta;
 
 /**
- * Class Init
- * /xigen_javascript/beta/init
- * @package Xigen\Javascript\Controller\Beta
+ * Class Data
+ * /xigen_javascript/delta/data
+ * @package Xigen\Javascript\Controller\Delta
  */
-class Init extends \Magento\Framework\App\Action\Action
+class Data extends \Magento\Framework\App\Action\Action
 {
     /**
      * @var \Magento\Framework\View\Result\PageFactory
@@ -29,7 +30,6 @@ class Init extends \Magento\Framework\App\Action\Action
 
     /**
      * Execute view action
-     *
      * @return \Magento\Framework\Controller\ResultInterface
      */
     public function execute()
