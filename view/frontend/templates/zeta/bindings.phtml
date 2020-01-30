@@ -1,0 +1,75 @@
+<?php
+/**
+ * /xigen_javascript/zeta/bindings
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Custom Bindings", 5)); ?></h1>
+
+<fieldset>
+    <legend><h2><?= $block->escapeHtml(__("Autoselect")); ?></h2></legend>
+    <pre><?= htmlentities('<input type="text" data-bind="autoselect: true"/>');?></pre>
+    <input type="text"
+           data-bind="autoselect: true"
+           value="<?= $block->escapeHtmlAttr(__("This is a value")); ?>"/>
+</fieldset>
+
+<hr>
+
+<fieldset>
+    <legend><h2><?= $block->escapeHtml(__("Collapsible")); ?></h2></legend>
+    <pre><?= htmlentities('
+<div data-mage-init=\'{"collapsible":{"openedState": "active", "saveState": true}}\'>
+    <div data-role="title">
+        <?= $block->escapeHtmlAttr(__("Title")); ?>
+    </div>
+    <div data-role="content">
+        <?= $block->escapeHtmlAttr(__("Collapsible content")); ?>
+    </div>
+</div>
+');?></pre>
+    <div data-mage-init='{"collapsible":{"openedState": "active", "saveState": true}}'>
+        <div data-role="title">
+            <?= $block->escapeHtmlAttr(__("Title")); ?>
+        </div>
+        <div data-role="content">
+            <?= $block->escapeHtmlAttr(__("Collapsible content")); ?>
+        </div>
+    </div>
+</fieldset>
+
+<hr>
+
+<fieldset>
+    <legend><h2><?= $block->escapeHtml(__("i18n")); ?></h2></legend>
+    <pre><?= htmlentities('<div data-bind="i18n: \'Translate using the standard knockout binding\'"></div>');?></pre>
+    <div data-bind="i18n: 'Translate using the standard knockout binding'"></div>
+</fieldset>
+
+<hr>
+
+<fieldset>
+    <legend><h2><?= $block->escapeHtml(__("style")); ?></h2></legend>
+    <pre><?= htmlentities('<div data-bind="style: {color: \'#ee0000\'}"><?= $block->escapeHtml(__("Red")); ?></div>');?></pre>
+    <div data-bind="style: {color: '#ee0000'}"><?= $block->escapeHtml(__("Red")); ?></div>
+</fieldset>
+
+<hr>
+
+<fieldset>
+    <legend><h2><?= $block->escapeHtml(__("Modal")); ?></h2></legend>
+    <pre><?= htmlentities('
+<div data-mage-init=\'{"Magento_Ui/js/modal/modal": { "autoOpen": true, "buttons": false, "modalClass": "modal-system-messages", "title": "Hello world!" }}\'>
+    <?= $block->escapeHtmlAttr(__("Inside the modal")); ?>
+</div>');?></pre>
+    <div data-mage-init='{"Magento_Ui/js/modal/modal": { "autoOpen": true, "buttons": false, "modalClass": "modal-system-messages", "title": "Hello world!" }}'>
+        <?= $block->escapeHtmlAttr(__("Inside the modal")); ?>
+    </div>
+</fieldset>
+
+<hr>
+
+
+
+<p>Further syntax can be found <a href="https://devdocs.magento.com/guides/v2.3/ui_comp_guide/concepts/magento-bindings.html">here</a></p>
+
+<p></p>https://devdocs.magento.com/guides/v2.3/ui_comp_guide/concepts/magento-bindings.html</p>

@@ -21,3 +21,7 @@ Invoke on a specific DOM node
 ### Epsilon: Knockout in Magento 2
 
 KO Model-View and View
+
+### Zeta: Knockout in Magento 2
+
+custom Knockout.js bindings
