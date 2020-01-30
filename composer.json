@@ -1,0 +1,26 @@
+{
+    "name": "xigen/module-javascript",
+    "description": "In depth look at Magento 2 Javascript and knockout implementation",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "0.0.3",
+    "authors": [
+        {
+            "email": "dominic@xigen.co.uk",
+            "name": "Dominic Xigen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*",
+        "php": "~7.0.0||~7.1.0||~7.2.0||~7.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xigen\\Javascript\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

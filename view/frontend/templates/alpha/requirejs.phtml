@@ -1,0 +1,12 @@
+<?php
+/**
+ * /xigen_javascript/alpha/requirejs
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Requirejs", 1)); ?></h1>
+<script type="text/javascript">
+    requirejs(['Xigen_Javascript/alpha/requirejs'],function(example){
+        alert('<?= $block->escapeJs(__("Loaded"));?>');
+        console.log(example);
+    }); 
+</script>

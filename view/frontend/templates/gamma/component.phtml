@@ -1,0 +1,20 @@
+<?php
+/**
+ * /xigen_javascript/gamma/component
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Component", 3)); ?></h1>
+<div id="one" class="foo">
+    <?= $block->escapeHtml(__("Hello World")); ?>
+</div>
+<div id="two" class="foo">
+    <?= $block->escapeHtml(__("Goodbye World")); ?>
+</div>    
+
+<script type="text/x-magento-init">
+    {
+        "#one": {
+            "Xigen_Javascript/gamma/component":{"config":"value"}
+        }
+    }        
+</script>
