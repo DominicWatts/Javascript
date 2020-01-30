@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Xigen\Javascript\Block\Gamma;
 
 class Component extends \Magento\Framework\View\Element\Template
