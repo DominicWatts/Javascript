@@ -1,11 +1,9 @@
 <?php
 
-
 namespace Xigen\Javascript\Controller\Gamma;
 
 class Component extends \Magento\Framework\App\Action\Action
 {
-
     protected $resultPageFactory;
 
     /**
