@@ -1,0 +1,20 @@
+<?php
+/**
+ * /xigen_javascript/beta/init
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Initialization", 2)); ?></h1>
+<div id="one" class="foo">
+    <?= $block->escapeHtml(__("Hello World")); ?>
+</div>
+<div id="two" class="foo">
+    <?= $block->escapeHtml(__("Goodbye World")); ?>
+</div>  
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Xigen_Javascript/beta/init":{}
+        }
+    }        
+</script>
