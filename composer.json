@@ -3,7 +3,7 @@
     "description": "In depth look at Magento 2 Javascript and knockout implementation",
     "type": "magento2-module",
     "license": "proprietary",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "authors": [
         {
             "email": "dominic@xigen.co.uk",

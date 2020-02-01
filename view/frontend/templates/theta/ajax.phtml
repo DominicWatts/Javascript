@@ -1,0 +1,30 @@
+<?php
+/**
+ * /xigen_javascript/theta/ajax
+ */
+?>
+<h1><?= $block->escapeHtml(__("%1: Ajax via Knockout", 6)); ?></h1>
+
+<div data-bind="scope: 'ajax'">
+    <!-- ko template: getTemplate() -->
+    <p><?= $block->escapeHtml(__("This is my special message to you:")); ?></p>
+    <p data-bind="html: data"><?= $block->escapeHtml('Html response goes here'); ?></p>
+    <p data-bind="text: data"><?= $block->escapeHtml('Text response goes here'); ?></p>
+    <!-- /ko -->
+</div>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "ajax": {
+                        "component": "Xigen_Javascript/theta/ajax",
+                        "template" : "Xigen_Javascript/theta/ajax"
+                    }
+                }
+            }
+        }
+    }
+</script>
