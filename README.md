@@ -25,3 +25,7 @@ KO Model-View and View
 ### Zeta: Knockout in Magento 2
 
 custom Knockout.js bindings
+
+### Theta: Ajax via Knockout in Magento 2
+
+Knockout and jQuery combined
